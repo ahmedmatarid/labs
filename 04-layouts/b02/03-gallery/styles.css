@@ -1,0 +1,16 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+main > * {
+  /* flex: 1 1 200px; */
+}
+
+main > figure > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

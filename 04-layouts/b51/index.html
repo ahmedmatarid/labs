@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style type="text/css">
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        height: 600px;
+        border: dashed 2px green;
+        /* overflow: hidden; */
+        gap: 30px;
+      }
+
+      .flexor {
+        background-color: fuchsia;
+        display: flex;
+        /* padding: 10px; */
+        /* display: inline; */
+        /* width: 70px; */
+        height: 70px;
+        border: solid 2px black;
+        margin: 10px;
+        text-align: center;
+        font-size: 5em;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-family: sans-serif;
+        flex: 1 1 50px;
+      }
+
+      .flexor:hover {
+        align-self: center;
+        background-color: #00ff00;
+        cursor: pointer;
+      }
+
+      .important {
+        /* order: 1; */
+      }
+
+      @media (min-width: 600px) {
+        .flexor {
+          background-color: #00ffff;
+        }
+      }
+    </style> -->
+    <style type="text/css">
+      /* @media (min-width: 600px) { */
+      .container {
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+        /* grid-template-columns: 200px 1fr; */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        /* grid-template-rows: repeat(auto, 1fr); */
+        border: solid 2px black;
+        justify-items: stretch;
+      }
+      /* } */
+
+      .container > * {
+        outline: black dashed 1px;
+        padding: 10px;
+      }
+
+      .flexor {
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flexor">1</div>
+      <div class="flexor" style="flex-grow: 4">2</div>
+      <div class="flexor important">3</div>
+      <div class="flexor important">4</div>
+      <div class="flexor important">5</div>
+      <div class="flexor" style="flex-grow: 10">6</div>
+      <div class="flexor">7</div>
+      <div class="flexor">8</div>
+      <div class="flexor">9</div>
+      <div class="flexor">10</div>
+      <div class="flexor">11</div>
+      <div class="flexor">12</div>
+      <div class="flexor">13</div>
+      <div class="flexor">14</div>
+      <div class="flexor">15</div>
+      <div class="flexor">16</div>
+    </div>
+  </body>
+</html>

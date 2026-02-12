@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .parent-disabled {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        /* align-items: center; */
+        height: 400px;
+        /* width: 400px; */
+        outline: dashed 1px black;
+      }
+
+      .child-disabled {
+        /* width: 100px; */
+        flex: 1 0 100px;
+        height: 100px;
+        background-color: red;
+        /* margin: 10px; */
+        font-size: xx-large;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+      }
+
+      .child-disabled:hover {
+        background-color: green;
+        cursor: pointer;
+        align-self: flex-end;
+      }
+
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+
+      .child {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <button class="child">1</button>
+      <button class="child">2</button>
+      <button class="child">3</button>
+      <button class="child">4</button>
+      <button class="child">5</button>
+      <button class="child">6</button>
+    </div>
+  </body>
+</html>

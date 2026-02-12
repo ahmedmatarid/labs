@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .parent {
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+        height: 600px;
+        gap: 0.5em;
+        outline: dashed 1px black;
+        /* overflow: scroll; */
+      }
+
+      .child {
+        /* display: inline-block; */
+        /* width: 100px; */
+        height: 100px;
+        background-color: greenyellow;
+        /* margin: 10px 0; */
+        /* font-size: xx-large; */
+        /* flex-grow: 1; */
+        /* flex-shrink: 1; */
+        /* flex-basis: 10ch; */
+        flex: 1 1 10ch;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      .child:hover {
+        background-color: lightcoral;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Paragraph</p>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child" style="flex-grow: 1">5</div>
+      <div class="child">6</div>
+      <div class="child" style="flex-grow: 1">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+    </div>
+  </body>
+</html>
