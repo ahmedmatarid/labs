@@ -1,0 +1,8 @@
+{
+  "name": "Dane",
+  "last": "Doe",
+  "subobj": {
+    "array": [1, 2, 34],
+    "toggle": true
+  }
+}
