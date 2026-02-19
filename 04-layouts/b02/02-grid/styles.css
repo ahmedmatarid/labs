@@ -152,6 +152,21 @@ figure > figcaption {
   body {
     display: grid;
     grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      "sidebar content"
+      "footer footer";
+  }
+
+  header {
+    grid-area: "sidebar";
+  }
+
+  main {
+    grid-area: "content";
+  }
+
+  footer {
+    grid-area: "footer";
   }
 
   header {
