@@ -129,3 +129,27 @@ console.log(array.filter((x, i, a) => a.indexOf(x) === i));
 [1, 2, 3, 2].indexOf(2); // -> 1
 
 [1, 2, 3, 4].reduce((acc, x) => (p(x) ? [...acc, f(x)] : acc), []);
+
+let sumg40 = (arr) =>
+  arr
+    .filter((x) => x > 40)
+    .map((x) => x * x)
+    .map((x) => -x)
+    .filter((x) => x % 3 === 0)
+    .reduce((acc, ele) => acc + ele, 0);
+console.log(sumg40(array3));
+
+// filter(map(x)) x.map.filter
+
+// const distinct = arr => [...new Set(arr)];
+const distinct = (arr) =>
+  arr.filter((x, index, array) => array.indexOf(x) === index);
+// Array.indexOf;
+
+console.log(distinct(array3));
+
+// [1, 2, 1].indexOf(1) -> 0
+// [1, 2, 1].indexOf(2) -> 1
+// [1, 2, 1].indexOf(3) -> -1
+
+// ["word1", "word2", "word3"].map((x) => "<li>" + x + "</li>").join("\n");

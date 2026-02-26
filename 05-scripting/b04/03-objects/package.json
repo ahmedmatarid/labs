@@ -1,7 +1,5 @@
 {
-  "name": "03-objects",
   "dependencies": {
-    "nanoid": "^5.1.6",
     "prompt-sync": "^4.2.0"
   }
 }

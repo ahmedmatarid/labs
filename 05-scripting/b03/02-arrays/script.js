@@ -110,8 +110,8 @@ console.log(map(array3, (x) => x ** x));
 console.log(array3.map((x) => x ** x));
 console.log(array3.filter((x) => x % 2 === 0));
 
-function reduce(arr, fn, intial) {
-  let acc = intial;
+function reduce(arr, fn, initial) {
+  let acc = initial;
   for (const ele of arr) {
     acc = fn(acc, ele);
   }
