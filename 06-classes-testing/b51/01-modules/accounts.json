@@ -1,0 +1,10 @@
+[
+  { "id": "08a45dd424", "balance": 502.3, "type": "Savings" },
+  { "id": "a9e2465841", "balance": 4000, "type": "Current" },
+  { "id": "7160dca601", "balance": 34320.55, "type": "Current" },
+  { "id": "2efde49d9d", "balance": 61023.69, "type": "Savings" },
+  { "id": "J1askofbq8", "balance": -100, "type": "Current" },
+  { "id": "Jxhnd2bYtf", "balance": 0, "type": "Current" },
+  { "id": "shpdPuo9EF", "balance": -100, "type": "Current" },
+  { "id": "YFH6WE9lyI", "balance": 1000, "type": "Savings" }
+]

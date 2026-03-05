@@ -18,11 +18,13 @@ const accounts = [
   { id: "2efde49d9d", balance: 61023.69, type: "Savings" },
 ];
 
-export function add(account) {
-  const id = nanoid();
+// CRUD interface
+
+export function add({ balance, type }) {
+  const id = nanoid(10);
   // account.id = id;
   // accounts.push(account);
-  accounts.push({ ...account, id });
+  accounts.push({ id, balance: balance ?? 0.0, type: type ?? "Current" });
   return id;
 }
 
@@ -44,11 +46,10 @@ export function remove(id) {
   //   return faccounts[0];
   // }
 
-  const index = accounts.indexOf((a) => a.id === id);
+  const index = accounts.findIndex((a) => a.id === id);
 
   if (index !== -1) {
-    const saccounts = accounts.splice(index, 1);
-    return saccounts[0];
+    return accounts.splice(index, 1)[0];
   }
 }
 
@@ -67,6 +68,10 @@ export function deposit(id, amount) {
 export function withdraw(id, amount) {
   const account = get(id);
 
+  // if (!account || amount <= 0 || account.balance < amount) {
+  //   return false;
+  // }
+
   if (!account) {
     return false;
   }
@@ -84,3 +89,31 @@ export function withdraw(id, amount) {
 // const arr = [1, 2, 3, 4];
 // console.log(arr.splice(1, 0));
 // console.log(arr);
+
+export function totalBalance() {
+  return accounts.reduce((t, a) => t + a.balance, 0.0);
+}
+
+export function deductFee(fee = 1.0) {
+  accounts.forEach((a) => {
+    if (a.type === "Current") {
+      a.balance -= fee;
+    }
+  });
+}
+
+export function distributeBenefit(percentage = 0.0125) {
+  accounts.forEach((a) => {
+    if (a.type === "Savings") {
+      a.balance *= 1 + percentage;
+    }
+  });
+}
+
+export function toJSON() {
+  return JSON.stringify(accounts);
+}
+
+export function fromJSON(json) {
+  return JSON.parse(json);
+}
