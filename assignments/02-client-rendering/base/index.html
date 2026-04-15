@@ -9,19 +9,20 @@
   </head>
 
   <body>
-    <!-- <main class="collection">
-      <header class="header">
+    <!--
+    <main class="collection">
+      <div class="header">
         <form class="filter">
-          <label for="filter-keyword">
-            <span data-lucide="filter">Filter</span>
-          </label>
+          <label for="filter-keyword"
+            ><span data-lucide="filter">Filter</span></label
+          >
           <ul class="tags">
-            <li class="tag selected">#</li>
-            <li class="tag selected">#cd</li>
-            <li class="tag selected">#ci</li>
-            <li class="tag selected">#japanese</li>
-            <li class="tag selected">#tag1</li>
-            <li class="tag selected">#tag2</li>
+            <li class="tag selected" data-tag="">#</li>
+            <li class="tag selected" data-tag="cd">#cd</li>
+            <li class="tag selected" data-tag="ci">#ci</li>
+            <li class="tag selected" data-tag="japanese">#japanese</li>
+            <li class="tag selected" data-tag="tag1">#tag1</li>
+            <li class="tag selected" data-tag="tag2">#tag2</li>
           </ul>
         </form>
         <form class="new">
@@ -29,17 +30,17 @@
             <span data-lucide="gallery-thumbnails">Add</span>
           </button>
         </form>
-      </header>
+      </div>
       <section class="deck">
         <div class="header">
           <div class="meta">
             <h2 class="title">Deck</h2>
             <ul class="tags">
-              <li class="tag">#cd</li>
-              <li class="tag">#ci</li>
-              <li class="tag">#japanese</li>
-              <li class="tag">#tag1</li>
-              <li class="tag">#tag2</li>
+              <li class="tag" data-tag="cd">#cd</li>
+              <li class="tag" data-tag="ci">#ci</li>
+              <li class="tag" data-tag="japanese">#japanese</li>
+              <li class="tag" data-tag="tag1">#tag1</li>
+              <li class="tag" data-tag="tag2">#tag2</li>
             </ul>
           </div>
           <form class="new">
@@ -54,7 +55,7 @@
               <div class="meta">
                 <h3 class="title">Words</h3>
                 <ul class="tags">
-                  <li class="tag">#japanese</li>
+                  <li class="tag" data-tag="japanese">#japanese</li>
                 </ul>
               </div>
               <form class="new">
@@ -66,14 +67,13 @@
             <div class="cards">
               <div class="card foreign-word" id="kHuyiZmp40">
                 <div class="content">
-                  (index.js, line 13)
                   <div class="word">生きがい</div>
                   <div class="pronunciation">ikigai</div>
                   <div class="translation">the reason for being</div>
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#japanese</li>
+                    <li class="tag" data-tag="japanese">#japanese</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -90,7 +90,7 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#japanese</li>
+                    <li class="tag" data-tag="japanese">#japanese</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -107,7 +107,7 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#japanese</li>
+                    <li class="tag" data-tag="japanese">#japanese</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -124,7 +124,7 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#japanese</li>
+                    <li class="tag" data-tag="japanese">#japanese</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -141,7 +141,7 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#japanese</li>
+                    <li class="tag" data-tag="japanese">#japanese</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -158,7 +158,7 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#japanese</li>
+                    <li class="tag" data-tag="japanese">#japanese</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -175,7 +175,7 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#japanese</li>
+                    <li class="tag" data-tag="japanese">#japanese</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -191,8 +191,8 @@
               <div class="meta">
                 <h3 class="title">Cards</h3>
                 <ul class="tags">
-                  <li class="tag">#tag1</li>
-                  <li class="tag">#tag2</li>
+                  <li class="tag" data-tag="tag1">#tag1</li>
+                  <li class="tag" data-tag="tag2">#tag2</li>
                 </ul>
               </div>
               <form class="new">
@@ -211,7 +211,7 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#tag1</li>
+                    <li class="tag" data-tag="tag1">#tag1</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -229,8 +229,8 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#tag1</li>
-                    <li class="tag">#tag2</li>
+                    <li class="tag" data-tag="tag1">#tag1</li>
+                    <li class="tag" data-tag="tag2">#tag2</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -246,6 +246,7 @@
                     <span data-lucide="diamond">Diamonds</span>
                   </div>
                 </div>
+                <div class="meta"></div>
                 <div class="actions">
                   <button title="remove" class="remove">
                     <span data-lucide="x">Remove</span>
@@ -259,7 +260,7 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#tag2</li>
+                    <li class="tag" data-tag="tag2">#tag2</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -275,8 +276,8 @@
               <div class="meta">
                 <h3 class="title">List</h3>
                 <ul class="tags">
-                  <li class="tag">#cd</li>
-                  <li class="tag">#ci</li>
+                  <li class="tag" data-tag="cd">#cd</li>
+                  <li class="tag" data-tag="ci">#ci</li>
                 </ul>
               </div>
               <form class="new">
@@ -301,8 +302,8 @@
                 </div>
                 <div class="meta">
                   <ul class="tags">
-                    <li class="tag">#cd</li>
-                    <li class="tag">#ci</li>
+                    <li class="tag" data-tag="cd">#cd</li>
+                    <li class="tag" data-tag="ci">#ci</li>
                   </ul>
                 </div>
                 <div class="actions">
@@ -315,7 +316,8 @@
           </section>
         </div>
       </section>
-    </main> -->
+    </main>
+    -->
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
