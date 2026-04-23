@@ -11,7 +11,7 @@ export default function Likes({ task }) {
   return (
     <li>
       Likes:
-      <Link href={`?likeId=${task.id}`}>
+      <Link href={`?action=like&task=${task.id}`}>
         <button>{task.likes}</button>
       </Link>
       <button onClick={handleLike}>{task.likes}</button>
