@@ -2,9 +2,9 @@ import * as tasks from "@/repos/tasks";
 import Likes from "./likes";
 
 export default async function Page({ params, searchParams }) {
-  const { likeId } = await searchParams;
-  if (likeId) {
-    await tasks.like(likeId);
+  const { action, task } = await searchParams;
+  if (action === "like") {
+    await tasks.like(task);
   }
 
   const data = await tasks.read();
