@@ -1,0 +1,8 @@
+{"timestamp":"00:00:00.848","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.602","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:06.150","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:15.664","source":"Server","level":"LOG","message":"prisma:query \"SELECT `main`.`Task`.`id`, `main`.`Task`.`title`, `main`.`Task`.`completed`, `main`.`Task`.`date` FROM `main`.`Task` WHERE 1=1 LIMIT ? OFFSET ?\""}
+{"timestamp":"00:01:20.586","source":"Server","level":"ERROR","message":"SyntaxError: JSON Parse error: Unexpected EOF"}
+{"timestamp":"00:02:31.549","source":"Server","level":"LOG","message":"prisma:query \"INSERT INTO `main`.`Task` (`id`, `title`, `completed`, `date`) VALUES (?,?,?,?) RETURNING `id` AS `id`, `title` AS `title`, `completed` AS `completed`, `date` AS `date`\""}
+{"timestamp":"00:09:01.509","source":"Server","level":"LOG","message":"prisma:query \"DELETE FROM `main`.`Task` WHERE (`main`.`Task`.`id` = ? AND 1=1) RETURNING `id` AS `id`, `title` AS `title`, `completed` AS `completed`, `date` AS `date`\""}
+{"timestamp":"00:09:23.730","source":"Server","level":"LOG","message":"prisma:query \"DELETE FROM `main`.`Task` WHERE (`main`.`Task`.`id` = ? AND 1=1) RETURNING `id` AS `id`, `title` AS `title`, `completed` AS `completed`, `date` AS `date`\""}

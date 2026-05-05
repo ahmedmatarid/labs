@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///C:/My_University/Fall%202024/CMPS%20310/Lab%20Work/Lab%208/Lab08-B02-Ahmed-Matarid/labs/training/Lab_10/01-task-tracker/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,mIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///C:/My_University/Fall%202024/CMPS%20310/Lab%20Work/Lab%208/Lab08-B02-Ahmed-Matarid/labs/training/Lab_10/01-task-tracker/app/page.jsx"],"sourcesContent":["\r\nexport default function Home() {\r\n  return (\r\n    <main className=\"p-4\">\r\n      <h1 className=\"text-2xl font-bold\">Task Tracker - Lab 10</h1>\r\n      <p>API is running. Test with Postman.</p>\r\n    </main>\r\n  );\r\n}"],"names":["Home","className"],"mappings":";;;;;;AACe,SAASA;IACtB,qBACE,8OAAC;QAAKC,WAAU;;0BACd,8OAAC;gBAAGA,WAAU;0BAAqB;;;;;;0BACnC,8OAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
+}
