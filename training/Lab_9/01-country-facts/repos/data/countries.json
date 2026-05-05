@@ -1,0 +1,28 @@
+[
+
+{
+"ID" : "1",
+"name" : "Japan",
+"population": 126146099,
+"area": 377975,
+"cities": [
+      { "id": "c1", "name": "Tokyo",  "population": 13929286, "capital": true,  "visited": false },
+      { "id": "c2", "name": "Osaka",  "population": 2691658,  "capital": false, "visited": false },
+      { "id": "c3", "name": "Nagoya", "population": 2296100,  "capital": false, "visited": false }
+    ]
+
+},
+
+{
+    "id": "2",
+    "name": "Italy",
+    "population": 60365558,
+    "area": 301338,
+    "cities": [
+      { "id": "c4", "name": "Rome",  "population": 2873000, "capital": true,  "visited": false },
+      { "id": "c5", "name": "Milan", "population": 1395000, "capital": false, "visited": false },
+      { "id": "c6", "name": "Turin", "population": 935000,  "capital": false, "visited": false }
+    ]
+}
+
+]
